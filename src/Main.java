@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        int index = 85;
-        int bmi = (int) service.calculate(index);
+        double bmi = service.calculate(180, 80);
         System.out.println("Ваш индекс массы тела: " + bmi);
     }
 }
